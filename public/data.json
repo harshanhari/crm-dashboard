@@ -1,0 +1,383 @@
+{
+  "user": {
+    "name": "Alex M M",
+    "role": "Location Manager"
+  },
+  "account": {
+    "name": "Lakshmi Diamond",
+    "address": "Demo Address, Test City, State, ZIP Code",
+    "contact": "demo@gmail.com",
+    "gst": "32ABCDE1234F1Z5",
+    "manager": "Rahul Menon",
+    "totals": {
+      "totalSales": 1500000,
+      "outstandingAmount": 250000,
+      "monthlyPurchase": 120000,
+      "creditLimit": 5000000,
+      "overdueAmount": 75000,
+      "availableCreditLimit": 2500000,
+      "lastPaymentDate": "25-May-2025",
+      "avgPaymentDays": 45
+    }
+  },
+  "metrics": [
+    {
+      "label": "Average Team",
+      "value": 5,
+      "suffix": ""
+    },
+    {
+      "label": "Total Amount",
+      "value": 80000,
+      "suffix": "",
+      "progress": 30
+    },
+    {
+      "label": "Monthly Amount",
+      "value": 8000,
+      "suffix": ""
+    },
+    {
+      "label": "Payment Received",
+      "value": 40000,
+      "suffix": "",
+      "progress": 50
+    }
+  ],
+  "taskOverview": {
+    "Location head": 60,
+    "Senior": 30,
+    "Junior": 10
+  },
+  "salesOverview": [
+    {
+      "group": "Juniors",
+      "target": 18,
+      "achieve": 15
+    },
+    {
+      "group": "Seniors",
+      "target": 22,
+      "achieve": 20
+    }
+  ],
+  "salePerformance": [
+    {
+      "month": "Jan",
+      "target": 600,
+      "achieved": 420
+    },
+    {
+      "month": "Feb",
+      "target": 700,
+      "achieved": 500
+    },
+    {
+      "month": "March",
+      "target": 900,
+      "achieved": 820
+    },
+    {
+      "month": "April",
+      "target": 800,
+      "achieved": 640
+    },
+    {
+      "month": "May",
+      "target": 950,
+      "achieved": 700
+    },
+    {
+      "month": "June",
+      "target": 650,
+      "achieved": 530
+    },
+    {
+      "month": "July",
+      "target": 850,
+      "achieved": 760
+    }
+  ],
+  "teamAvailability": [
+  {
+    "sl": 1,
+    "name": "Leena",
+    "assigned": 5,
+    "completed": 96
+  },
+  {
+    "sl": 2,
+    "name": "Joy",
+    "assigned": 4,
+    "completed": 60
+  },
+  {
+    "sl": 3,
+    "name": "Francis",
+    "assigned": 1,
+    "completed": 86
+  },
+  {
+    "sl": 4,
+    "name": "Joel",
+    "assigned": 2,
+    "completed": 77
+  },
+  {
+    "sl": 5,
+    "name": "Ajin Das",
+    "assigned": 2,
+    "completed": 90
+  },
+  {
+    "sl": 6,
+    "name": "Rahul Raj",
+    "assigned": 1,
+    "completed": 99
+  },
+  {
+    "sl": 7,
+    "name": "Sneha",
+    "assigned": 3,
+    "completed": 80
+  },
+  {
+    "sl": 8,
+    "name": "Rajesh",
+    "assigned": 2,
+    "completed": 70
+  },
+  {
+    "sl": 9,
+    "name": "Priya",
+    "assigned": 1,
+    "completed": 95
+  },
+  {
+    "sl": 10,
+    "name": "Vijay",
+    "assigned": 4,
+    "completed": 85
+  },
+  {
+    "sl": 11,
+    "name": "Saranya",
+    "assigned": 3,
+    "completed": 92
+  },
+  {
+    "sl": 12,
+    "name": "Kumar",
+    "assigned": 2,
+    "completed": 88
+  },
+  {
+    "sl": 13,
+    "name": "Nisha",
+    "assigned": 1,
+    "completed": 98
+  },
+  {
+    "sl": 14,
+    "name": "Manoj",
+    "assigned": 3,
+    "completed": 76
+  },
+  {
+    "sl": 15,
+    "name": "Deepa",
+    "assigned": 2,
+    "completed": 89
+  },
+  {
+    "sl": 16,
+    "name": "Ramesh",
+    "assigned": 1,
+    "completed": 91
+  }
+],
+  "topPerformers": [
+    {
+      "name": "Akhil",
+      "score": 12,
+      "trend": [
+        12,
+        9,
+        8,
+        10,
+        14,
+        11,
+        12
+      ]
+    },
+    {
+      "name": "Alex",
+      "score": 8,
+      "trend": [
+        10,
+        7,
+        6,
+        7,
+        12,
+        7,
+        8
+      ]
+    },
+    {
+      "name": "Rahul",
+      "score": 6,
+      "trend": [
+        8,
+        5,
+        4,
+        5,
+        10,
+        6,
+        6
+      ]
+    },
+    {
+      "name": "Jeo",
+      "score": 7,
+      "trend": [
+        9,
+        6,
+        5,
+        6,
+        11,
+        6,
+        7
+      ]
+    },
+    {
+      "name": "John Joy",
+      "score": 10,
+      "trend": [
+        11,
+        9,
+        7,
+        9,
+        13,
+        9,
+        10
+      ]
+    },
+    {
+      "name": "Alen Roy",
+      "score": 16,
+      "trend": [
+        13,
+        14,
+        12,
+        15,
+        18,
+        16,
+        16
+      ]
+    }
+  ],
+  "chats": [
+    {
+      "time": "9:00pm",
+      "title": "Lakshmi Diamond",
+      "subtitle": "Stone Quality Checking",
+      "unread": 2
+    },
+    {
+      "time": "9:00pm",
+      "title": "Junior. Alen Raj",
+      "subtitle": "Stone Quality Checking",
+      "unread": 1
+    },
+    {
+      "time": "7:10pm",
+      "title": "Glam & Gleam.",
+      "subtitle": "Document",
+      "unread": 0
+    },
+    {
+      "time": "7:00pm",
+      "title": "Junior. Harshan Raj",
+      "subtitle": "Stone Quality Checking",
+      "unread": 0
+    },
+    {
+      "time": "1:00am",
+      "title": "Location Head",
+      "subtitle": "Stone Quality Checking",
+      "unread": 0
+    },
+    {
+      "time": "12:00am",
+      "title": "Sr. Ram Raj",
+      "subtitle": "Stone Quality Checking",
+      "unread": 0
+    },
+    {
+      "time": "11:00am",
+      "title": "Sr. Rajesh",
+      "subtitle": "Stone Quality Checking",
+      "unread": 0
+    },
+    {
+      "time": "10:30am",
+      "title": "Diamond House",
+      "subtitle": "Order Inquiry",
+      "unread": 3
+    },
+    {
+      "time": "10:00am",
+      "title": "Meera Jewels",
+      "subtitle": "Payment Update",
+      "unread": 0
+    },
+    {
+      "time": "9:45am",
+      "title": "Ravi Kumar",
+      "subtitle": "Stone Quality Checking",
+      "unread": 1
+    },
+    {
+      "time": "9:30am",
+      "title": "Sapphire Traders",
+      "subtitle": "Document",
+      "unread": 0
+    },
+    {
+      "time": "9:15am",
+      "title": "Emerald Group",
+      "subtitle": "Order Inquiry",
+      "unread": 2
+    },
+    {
+      "time": "9:00am",
+      "title": "Ruby Exports",
+      "subtitle": "Payment Update",
+      "unread": 0
+    },
+    {
+      "time": "8:45am",
+      "title": "Pearl Associates",
+      "subtitle": "Stone Quality Checking",
+      "unread": 1
+    },
+    {
+      "time": "8:30am",
+      "title": "Opal Gems",
+      "subtitle": "Document",
+      "unread": 0
+    },
+    {
+      "time": "8:15am",
+      "title": "Topaz Corp",
+      "subtitle": "Order Inquiry",
+      "unread": 0
+    },
+    {
+      "time": "8:00am",
+      "title": "Amethyst Ltd.",
+      "subtitle": "Stone Quality Checking",
+      "unread": 2
+    }
+  ]
+}

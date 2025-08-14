@@ -1,0 +1,394 @@
+:root {
+  --bg: #1f1716;
+  --panel: #2a2221;
+  --panel-2: #342c2b;
+  --text: #eae2df;
+  --muted: #bfb6b3;
+  --accent: #ff6b6b;
+  --green: #2dd4bf;
+  --yellow: #fbbf24;
+  --pink: #f472b6;
+  --border: #3a3231;
+  --card: #261e1d;
+  --chip: #3b322f;
+}
+
+/* Existing styles remain unchanged */
+* {
+  box-sizing: border-box
+}
+
+html,
+body,
+#root {
+  height: 100%
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #261c1c;
+  color: var(--text);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-body {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 16px;
+  padding: 16px;
+  flex: 1 1 0%;
+  height: 0;
+  min-height: 0;
+}
+
+/* =================== UPDATES START =================== */
+
+/* Dashboard Container for new layout */
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 1fr 30%;
+  /* left flexible, right fixed */
+  gap: 16px;
+  width: 100%;
+}
+
+/* Left column: middle-cards on top, kpi-grid below */
+.left-column {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 16px;
+}
+
+/* Right column: right-section styling */
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .dashboard-container {
+    grid-template-columns: 1fr;
+    /* stack left + right on smaller screens */
+  }
+
+  .left-column,
+  .right-column {
+    grid-template-rows: auto;
+  }
+}
+
+/* =================== UPDATES END =================== */
+
+/* Rest of your existing CSS */
+.icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* background: var(--chip) */
+}
+
+.badge {
+  background: var(--accent);
+  color: white;
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 12px;
+  margin-left: 6px
+}
+
+.card {
+  background: #261c1c;
+  border: 1px solid #7F7F7F;
+  border-radius: 12px
+}
+
+.team-availability-card {
+  padding: 12px;
+  height: 325px;
+  display: flex;
+  flex-direction: column;
+  background: #261c1c;
+  border: 1px solid #7F7F7F;
+  border-radius: 12px;
+}
+
+.team-availability-table-wrapper {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.team-availability-table {
+  width: 100%;
+  font-size: 12px;
+  border-collapse: collapse;
+}
+
+.team-availability-table th,
+.team-availability-table td {
+  padding: 6px 8px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+.team-availability-bar {
+  background: #444;
+  height: 6px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.team-availability-bar span {
+  display: block;
+  height: 100%;
+  background: #2dd4bf;
+}
+
+.team-availability-small {
+  font-size: 10px;
+  color: #bbb;
+}
+
+
+.separator {
+  height: 1px;
+  background: var(--border);
+  margin: 12px 0
+}
+
+.small {
+  font-size: 12px;
+  color: var(--muted)
+}
+
+.kpi-row {
+  display: flex;
+  align-items: stretch;
+  gap: 18px;
+  justify-content: space-between;
+}
+
+.kpi {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.kpi .icon {
+  background-color: #261c1c;
+  font-size: 1.4em;
+  margin-right: 6px;
+}
+
+.kpi .label {
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.kpi .value {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin-left: 4px;
+}
+
+.middle-cardsitem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+}
+
+.middle-cardsitem .small {
+  flex: 1 1 0;
+}
+
+.middle-cardsitem .small:first-child {
+  text-align: left;
+}
+
+.middle-cardsitem .small:last-child {
+  text-align: right;
+}
+
+/* Existing dashboard-scroll styling */
+.dashboard.scroll .middle-cards,
+.dashboard.scroll .kpi-grid {
+  width: 100%;
+}
+
+.dashboard.scroll .right-sidebar {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.smallfont {
+  font-size: 12px;
+  padding: 4px;
+}
+
+/* Grid utilities */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px
+}
+
+.scroll {
+  overflow: auto
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #4a403f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3a3231;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5a4f4e;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3a3231 #4a403f;
+}
+
+.topnav .brand .logo-img {
+  height: 40px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .app-body {
+    grid-template-columns: 1fr;
+    padding: 8px;
+    gap: 8px;
+  }
+
+  .sidenav {
+    height: auto;
+    flex-direction: row;
+    overflow-x: auto;
+    min-width: 0;
+    padding: 8px 4px;
+    border-radius: 10px;
+  }
+
+  .dashboard {
+    padding: 8px 0;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .topnav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .search input {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .app-body {
+    padding: 4px;
+    gap: 4px;
+  }
+
+  .card {
+    border-radius: 8px;
+  }
+}
+
+.dashboard.scroll {
+  height: 100%;
+  overflow: auto;
+  min-width: 0;
+  scrollbar-width: none;
+}
+
+.dashboard.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.account-summary {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.account-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.account-label {
+  flex: 1;
+  font-size: 0.875rem;
+  color: #eae2df;
+}
+
+.account-separator {
+  width: 20px;
+  text-align: center;
+  color: #bfb6b3;
+}
+
+.account-value {
+  flex: 1;
+  text-align: right;
+  font-size: 0.875rem;
+  color: #eae2df;
+}
+
+.account-value.account-overdue {
+  color: #ff6b6b;
+}

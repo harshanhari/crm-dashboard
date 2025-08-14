@@ -1,0 +1,53 @@
+.section-title {
+    font-weight: 600;
+    margin-bottom: 8px
+}
+
+.legend {
+    display: flex;
+    gap: 12px;
+    font-size: 12px;
+    color: var(--muted)
+}
+
+.legend .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+    background: var(--muted)
+}
+
+.legend .dot.target {
+    background: var(--pink)
+}
+
+.legend .dot.achieve {
+    background: var(--green)
+}
+
+.legend .dot.head {
+    background: var(--yellow)
+}
+
+.legend .dot.senior {
+    background: var(--pink)
+}
+
+.legend .dot.junior {
+    background: var(--green)
+}
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    flex-wrap: nowrap;
+    overflow-x: auto
+}
+
+.chip {
+    white-space: nowrap
+}
+
