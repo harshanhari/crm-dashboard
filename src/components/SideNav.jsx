@@ -3,10 +3,13 @@ import FilterBar from './FilterBar';
 
 const SideNav = () => {
   const [chats, setChats] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     fetch('/data.json').then(r => r.json()).then(data => setChats(data.chats));
   }, []);
+
+  const filteredChats = chats.filter(c => c.title.toLowerCase().includes(searchQuery.toLowerCase()));
 
   return (
     <aside className="sidenav">
@@ -14,7 +17,11 @@ const SideNav = () => {
       <div className="search-container">
         <div className="search-box">
           <span className="ico">🔎</span>
-          <input placeholder="Search" />
+          <input
+            placeholder="Search"
+            value={searchQuery}
+            onChange={e => setSearchQuery(e.target.value)}
+          />
         </div>
         <span className="icon">⋮</span>
       </div>
@@ -22,7 +29,7 @@ const SideNav = () => {
       <FilterBar />
 
       <div className="chatlist">
-        {chats.map((c, idx) => (
+        {filteredChats.map((c, idx) => (
           <div className="chatitem" key={idx}>
             <div className="avatar" />
             <div className="meta">
