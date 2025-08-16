@@ -16,8 +16,8 @@ const SalesOverviewBar = ({ data = [] }) => {
             <Legend formatter={(value, entry) => (
               <span style={{ color: '#FFFFFF' }}>{value}</span>
             )} />            
-            <Bar dataKey="target" fill="#200DC6" radius={[6, 6, 0, 0]} />
-            <Bar dataKey="achieve" fill="#0AABC8" radius={[6, 6, 0, 0]} />
+            <Bar dataKey="target" name="target" fill="#200DC6" radius={[6, 6, 0, 0]} />
+            <Bar dataKey="achieve" name="achieve" fill="#0AABC8" radius={[6, 6, 0, 0]} />
           </BarChart>
         </ResponsiveContainer>
       </div>

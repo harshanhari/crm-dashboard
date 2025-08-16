@@ -19,7 +19,7 @@ const TopPerformerChart = ({ rows = [] }) => {
             <YAxis stroke="#bfb6b3" />
             <Tooltip contentStyle={{ background: '#2a2221', border: '1px solid #3a3231' }} />
             <Legend />
-            <Bar dataKey="score" fill="#075869" radius={[6, 6, 0, 0]} />
+            <Bar dataKey="score" name="score" fill="#075869" radius={[6, 6, 0, 0]} />
             <Line dataKey={(entry) => entry.avg + 10} stroke="#B68660" strokeWidth={2} dot={false} />
             <Area dataKey={(entry) => entry.avg + 10} fill="#B68660" fillOpacity={0.2} />
           </ComposedChart>

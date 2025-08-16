@@ -285,7 +285,7 @@ body {
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: #3a3231 #4a403f;
+  scrollbar-color: #3a3231 #261c1c;
 }
 
 .topnav .brand .logo-img {
@@ -345,6 +345,23 @@ body {
     border-radius: 8px;
   }
 }
+
+.subData {
+  height: calc(100vh - 175px);
+  overflow: auto;
+
+  /* Hide scrollbar for Chrome, Safari, and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+}
+
+.subData::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, and Opera */
+}
+
 
 .dashboard.scroll {
   height: 100%;

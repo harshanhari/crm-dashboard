@@ -379,5 +379,56 @@
       "subtitle": "Stone Quality Checking",
       "unread": 2
     }
+  ],
+  "chatMessages": [
+    {
+      "id": 1,
+      "text": "Hi, The necklace had a beautiful diamond .\nThe necklace had a beautiful diamond Stone.",
+      "time": "9:00 am",
+      "source": "email",
+      "date": "2025-08-15"
+    },
+    {
+      "id": 2,
+      "text": "The necklace had a beautiful diamond.",
+      "time": "9:01 am",
+      "source": "email",
+      "date": "2025-08-15"
+    },
+    {
+      "id": 3,
+      "text": "The necklace had a beautiful diamond ...\nThe necklace had a beautiful diamond .",
+      "time": "9:01 am",
+      "source": "email",
+      "date": "2025-08-15"
+    },
+    {
+      "id": 4,
+      "text": "Hi, The necklace had a pendant. The necklace had a beautiful diamond pendant",
+      "time": "9:01 am",
+      "source": "whatsapp",
+      "date": "2025-08-16"
+    },
+    {
+      "id": 5,
+      "text": "The necklace had a beautiful diamond pendant",
+      "time": "9:01 am",
+      "source": "whatsapp",
+      "date": "2025-08-16"
+    },
+    {
+      "id": 6,
+      "text": "The necklace had a beautiful diamond locket, The necklace had a beautiful diamond stone.",
+      "time": "9:01 am",
+      "source": "whatsapp",
+      "date": "2025-08-16"
+    },
+    {
+      "id": 7,
+      "text": "The necklace had a beautiful diamond locket.\nThe necklace had a beautiful diamond.",
+      "time": "9:01 am",
+      "source": "whatsapp",
+      "date": "2025-08-16"
+    }
   ]
 }

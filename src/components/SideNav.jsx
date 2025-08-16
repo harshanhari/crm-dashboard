@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import FilterBar from './FilterBar';
 
-const SideNav = () => {
+const SideNav = ({ onChatSelect }) => {
   const [chats, setChats] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
+  const [selectedIdx, setSelectedIdx] = useState(null);
 
   useEffect(() => {
     fetch('/data.json').then(r => r.json()).then(data => setChats(data.chats));
@@ -30,7 +31,14 @@ const SideNav = () => {
 
       <div className="chatlist">
         {filteredChats.map((c, idx) => (
-          <div className="chatitem" key={idx}>
+          <div
+            className={`chatitem${selectedIdx === idx ? ' selected' : ''}`}
+            key={idx}
+            onClick={() => {
+              setSelectedIdx(idx);
+              if (onChatSelect) onChatSelect(idx);
+            }}
+          >
             <div className="avatar" />
             <div className="meta">
               <div style={{ display: 'flex', justifyContent: 'space-between' }}>

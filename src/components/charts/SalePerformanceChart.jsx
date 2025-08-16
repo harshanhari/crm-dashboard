@@ -14,8 +14,8 @@ const SalePerformanceChart = ({ data = [] }) => {
             <Tooltip contentStyle={{ background: '#2a2221', border: '1px solid #3a3231' }} />
             <Legend formatter={(value, entry) => (
               <span style={{ color: '#FFFFFF' }}>{value}</span>
-            )} />             <Bar dataKey="target" fill="#01AD96" radius={[6, 6, 0, 0]} />
-            <Bar dataKey="achieved" fill="#FF6868" radius={[6, 6, 0, 0]} />
+            )} />             <Bar name="target" dataKey="target" fill="#01AD96" radius={[6, 6, 0, 0]} />
+            <Bar name="achieved" dataKey="achieved" fill="#FF6868" radius={[6, 6, 0, 0]} />
           </BarChart>
         </ResponsiveContainer>
       </div>
